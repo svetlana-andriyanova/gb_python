@@ -21,8 +21,8 @@ class Worker:
 
 
 class Position(Worker):
-    def full_name(self):
-        return self.name + ' ' + self.surname
+    def __str__(self):
+        return f'Полное имя: {self.surname} {self.name}'
 
     def total_income(self):
         return self._income.get('wage') + self._income.get('wage') * \
@@ -33,5 +33,5 @@ worker_1 = Position('Иван', 'Иванов', 'Менеджер', 30000, 25)
 print('Имя:', worker_1.name)
 print('Фамилия:', worker_1.surname)
 print('Должность:', worker_1.position)
-print('Полное имя:', worker_1.full_name())
+print(str(worker_1))
 print('Размер дохода:', worker_1.total_income())
