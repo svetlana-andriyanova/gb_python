@@ -24,11 +24,12 @@ class Road:
         self._length_road = length_road
         self._width_road = width_road
 
-    def mass_calc(self, mass, depth):
-        asph_mass = self._length_road * self._width_road * mass * depth
+    def mass_calc(self):
+        asph_mass = self._length_road * self._width_road * \
+                    self._mass * self._depth
         return asph_mass
 
 
 res = Road(5000, 20)
 print(f'Масса асфальта,необходимого для покрытия всего дорожного полотна равна'
-      f' {res.mass_calc(25, 0.05)/1000} т.')
+      f' {res.mass_calc()/1000} т.')

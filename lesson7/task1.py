@@ -15,10 +15,6 @@ import time
 
 
 class TrafficLight():
-    colors = {'красный': 7, 'желтый': 2, 'зеленый': 10}
-    red_color = 'красный'
-    yellow_color = 'желтый'
-    green_color = 'зеленый'
 
     def __init__(self, color):
         self.__color = color
@@ -26,14 +22,14 @@ class TrafficLight():
 
     def running(self):
         loc_color = self.__color
-        if loc_color == self.red_color:
+        if loc_color == 'красный':
             print(f'Красный свет, время ожидания 7 сек')
             time.sleep(7)
             print(f'Желтый свет, время ожидания 2 сек')
             time.sleep(2)
             print(f'Зеленый свет, время ожидания 1 сек')
             time.sleep(4)
-        elif loc_color == self.yellow_color:
+        elif loc_color == 'желтый':
             print(f'Желтый свет, время ожидания 2 сек')
             time.sleep(2)
             print(f'Зеленый свет, время ожидания 4 сек')
