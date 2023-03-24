@@ -23,7 +23,7 @@ import yaml
 
 def write_dict_to_yaml(dict, file):
     with open(file, 'w') as f_n:
-        yaml.dump(dict, f_n,  allow_unicode=True, default_flow_style=False)
+        yaml.dump(dict, f_n, allow_unicode=True, default_flow_style=False)
 
     with open(file) as f_n:
         f_n_content = yaml.full_load(f_n)
@@ -35,7 +35,7 @@ my_dict = {
     'breed': ['beagle', 'collie', 'pincher'],
     'breed_quantity': 3,
     'breed_price': {
-        'beagle': '350€-1000€',
+        'beagle': '350$-1000€',
         'collie': '130€-450€',
         'pincher': '130€-1500€',
     }
