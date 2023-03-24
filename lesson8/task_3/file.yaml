@@ -3,7 +3,7 @@ breed:
 - collie
 - pincher
 breed_price:
-  beagle: 350ˆ-1000ˆ
+  beagle: 350$-1000ˆ
   collie: 130ˆ-450ˆ
   pincher: 130ˆ-1500ˆ
 breed_quantity: 3
